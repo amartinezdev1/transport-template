@@ -2,7 +2,7 @@
 </script>
 
 <template>
-	<NuxtLayout>
-		<NuxtPage />
-	</NuxtLayout>
+	<div class="w-full">
+		<PageHero />
+	</div>
 </template>

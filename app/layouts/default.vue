@@ -2,7 +2,8 @@
 </script>
 
 <template>
-	<NuxtLayout>
-		<NuxtPage />
-	</NuxtLayout>
+	<div>
+		<AppHeader />
+		<slot />
+	</div>
 </template>
