@@ -19,7 +19,16 @@ export default defineNuxtConfig({
 		},
 	],
 	devtools: { enabled: true },
+	app: {
+		baseURL: '/transport/',
+		head: {
+			title: 'Transport - Template',
+		},
+	},
 	css: ['@/assets/css/main.css'],	compatibilityDate: '2025-07-15',
+	nitro: {
+		preset: 'static',
+	},
 	vite: {
 		css: {
 			preprocessorOptions: {

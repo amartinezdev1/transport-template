@@ -38,5 +38,20 @@
 				</div>
 			</template>
 		</UPageHero>
+		<HeroDarkSection />
+		<div class="w-full bg-[#F6F6F6]">
+			<UPageHero>
+				<template #default>
+					<div class="w-full lg:max-w-(--ui-container) flex flex-col gap-8 lg:gap-16">
+						<HeadingSection
+							title="Specialist industries we know inside out"
+							descripcion="We bring deep sector knowledge to support your travel and meetings, whatever your industry’s unique demands and challenges."
+							orientation="left"
+						/>
+						<SwiperVertical />
+					</div>
+				</template>
+			</UPageHero>
+		</div>
 	</div>
 </template>

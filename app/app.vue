@@ -4,6 +4,6 @@
 <template>
 	<NuxtLayout>
 		<NuxtPage />
-		<GsapDemo />
+		<!-- <GsapDemo /> -->
 	</NuxtLayout>
 </template>
