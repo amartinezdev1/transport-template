@@ -67,8 +67,6 @@ onMounted(() => {
 	function animateImage() {
 		const wrappedIndex = wrapper(index);
 
-		console.log(index, flair.length);
-
 		const img = flair[wrappedIndex];
 		gsap.killTweensOf(img);
 

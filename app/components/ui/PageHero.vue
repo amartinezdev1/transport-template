@@ -13,7 +13,7 @@
 				icon="i-lucide-play"
 				size="lg"
 				variant="solid"
-				class="bg-yellow-400 rounded-full px-6 py-3 text-base"
+				class="bg-secondary rounded-full px-6 py-3 text-base"
 			>
 				Play Video
 			</UButton>

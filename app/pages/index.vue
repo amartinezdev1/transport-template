@@ -1,4 +1,37 @@
 <script setup lang="ts">
+const sectionClarity = [
+	{
+		name: 'HeadingSection',
+		props: {
+			title: 'A closer look at ClarityGo & MeetingsPro',
+			descripcion: 'We\'re a step ahead of most corporate travel companies - we take care of business travel and meetings, all under one roof. Our tech is built to make bookings easier, faster and more connected. Whether you\'re booking a trip, managing a meeting, or tracking spend, ClarityGo and MeetingsPro provide the tools to stay in control.',
+			color: 'text-white',
+		},
+	},
+	{
+		name: 'PanelTabs',
+		props: {
+			class: 'mt-16',
+		},
+	},
+];
+
+const sectionWithClarity = [
+	{
+		name: 'HeadingSection',
+		props: {
+			title: 'Why Clarity?',
+			descripcion: 'Combining cutting-edge proprietary technology with exceptional people-driven service we deliver innovative solutions with a strong focus on exceptional customer service.',
+			color: 'text-white',
+		},
+	},
+	{
+		name: 'ComparisonBenefits',
+		props: {
+			class: 'mt-16',
+		},
+	},
+];
 </script>
 
 <template>
@@ -20,12 +53,12 @@
 				<img
 					src="https://picsum.photos/640/640?random=1"
 					alt="App screenshot"
-					class="logo-outer rounded-lg shadow-2xl ring ring-default"
+					class="rounded-lg ring ring-default"
 				>
 				<img
 					src="https://picsum.photos/640/640?random=2"
 					alt="App screenshot"
-					class="logo-outer rounded-lg shadow-2xl ring ring-default"
+					class="rounded-lg ring ring-default"
 				>
 			</template>
 		</UPageHero>
@@ -38,7 +71,10 @@
 				</div>
 			</template>
 		</UPageHero>
-		<HeroDarkSection />
+		<LazyHeroDarkSection
+			:components="sectionClarity"
+			hydrate-on-visible
+		/>
 		<div class="w-full bg-[#F6F6F6]">
 			<UPageHero>
 				<template #default>
@@ -48,10 +84,14 @@
 							descripcion="We bring deep sector knowledge to support your travel and meetings, whatever your industry’s unique demands and challenges."
 							orientation="left"
 						/>
-						<SwiperVertical />
+						<LazySwiperVertical hydrate-on-visible />
 					</div>
 				</template>
 			</UPageHero>
 		</div>
+		<LazyHeroDarkSection
+			:components="sectionWithClarity"
+			hydrate-on-visible
+		/>
 	</div>
 </template>

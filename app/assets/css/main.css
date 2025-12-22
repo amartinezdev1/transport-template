@@ -5,8 +5,3 @@
   --ui-container: 90rem;
   --ui-color-neutral-900: black;
 }
-
-html, body {
-    width: 100%;
-	overflow-x: hidden;
-}
