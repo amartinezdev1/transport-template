@@ -10,9 +10,7 @@ const sectionClarity = [
 	},
 	{
 		name: 'PanelTabs',
-		props: {
-			class: 'mt-16',
-		},
+		props: {},
 	},
 ];
 
@@ -27,9 +25,26 @@ const sectionWithClarity = [
 	},
 	{
 		name: 'ComparisonBenefits',
+		props: {},
+	},
+	{
+		name: 'CounterUpEffect',
+		props: {},
+	},
+];
+
+const sectionsShowCase = [
+	{
+		name: 'HeadingSection',
 		props: {
-			class: 'mt-16',
+			title: 'Real stories, real results',
+			descripcion: 'From responding to emergency situations to increasing online adoption levels, hear directly from the people and organisations we support about the positive impact our services have on their travel and meetings programmes.',
 		},
+		styleClass: 'px-6 lg:px-0',
+	},
+	{
+		name: 'SwiperInfinite',
+		props: {},
 	},
 ];
 </script>
@@ -89,9 +104,9 @@ const sectionWithClarity = [
 				</template>
 			</UPageHero>
 		</div>
-		<LazyHeroDarkSection
+		<HeroDarkSection
 			:components="sectionWithClarity"
-			hydrate-on-visible
 		/>
+		<HeroSection :components="sectionsShowCase" />
 	</div>
 </template>

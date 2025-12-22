@@ -2,6 +2,7 @@
 const { components } = defineProps<{
 	components: Array<{
 		name: string;
+		styleClass?: string;
 		props?: object;
 	}>;
 }>();
@@ -11,6 +12,7 @@ const componentsResolved = computed(() => {
 		return {
 			component: resolveComponent(comp?.name),
 			props: comp?.props || {},
+			styleClass: comp?.styleClass || '',
 		};
 	});
 });
@@ -18,13 +20,14 @@ const componentsResolved = computed(() => {
 
 <template>
 	<ClientOnly>
-		<section class="bg-[#161717] px-6 lg:px-0 py-24 sm:py-32 lg:py-40">
-			<section class="w-full lg:max-w-(--ui-container) mx-auto flex flex-col gap-16">
+		<section class="w-full py-24 sm:py-32 lg:py-40 ">
+			<section class="w-full flex flex-col gap-16">
 				<component
 					:is="component.component"
 					v-for="(component, index) in componentsResolved"
 					:key="index"
 					v-bind="component.props"
+					:class="component.styleClass"
 				/>
 			</section>
 		</section>

@@ -5,22 +5,32 @@ import { ref, onMounted, watch } from 'vue';
 const items: AccordionItem[] = [
 	{
 		label: 'Search & Book',
+		title: 'Fast, confident booking in one place',
 		content: 'Add your meeting details, choose your location, set your requirements, and get instant venue options – fast, easy and all in one place.',
 	},
 	{
-		label: 'Colors',
+		label: 'Accessible',
+		title: 'Inclusive by design',
 		content: 'Choose a primary and a neutral color from your Tailwind CSS theme.',
 	},
 	{
-		label: 'Components',
-		content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.',
-	},
-	{
-		label: 'Search & Book',
+		label: 'Personalised',
+		title: 'Travel experiences tailored to you',
 		content: 'Add your meeting details, choose your location, set your requirements, and get instant venue options – fast, easy and all in one place.',
 	},
 	{
-		label: 'Colors',
+		label: 'Trip management',
+		title: 'Manage your travel and trips, all in one place',
+		content: 'Choose a primary and a neutral color from your Tailwind CSS theme.',
+	},
+	{
+		label: 'Report',
+		title: 'Smarter insights, informed decisions',
+		content: 'Choose a primary and a neutral color from your Tailwind CSS theme.',
+	},
+	{
+		label: 'Support',
+		title: 'We\'re with you, 24/7/365',
 		content: 'Choose a primary and a neutral color from your Tailwind CSS theme.',
 	},
 ];
@@ -75,7 +85,7 @@ onMounted(() => {
 		<template #body="{ item }">
 			<div class="flex flex-col gap-4">
 				<h3 class="text-3xl">
-					Find it. Book it. Done.
+					{{ item.title }}
 				</h3>
 				<p class="text-lg">
 					{{ item.content }}

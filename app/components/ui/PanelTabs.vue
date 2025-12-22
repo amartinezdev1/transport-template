@@ -3,15 +3,11 @@ import type { TabsItem } from '@nuxt/ui';
 
 const items = [
 	{
-		label: 'Account',
-		description: 'Make changes to your account here. Click save when you\'re done.',
-		icon: 'i-lucide-user',
+		label: 'ClarityGo',
 		slot: 'account' as const,
 	},
 	{
-		label: 'Password',
-		description: 'Change your password here. After saving, you\'ll be logged out.',
-		icon: 'i-lucide-lock',
+		label: 'MeetingsPro',
 		slot: 'password' as const,
 	},
 ] satisfies TabsItem[];
