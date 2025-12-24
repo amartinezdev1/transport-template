@@ -60,8 +60,8 @@ const counterDetails = [
 </script>
 
 <template>
-	<div class="container mx-auto">
-		<div class="w-full grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-10">
+	<div class="container mx-auto mt-12 lg:mt-24">
+		<div class="w-full grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-8">
 			<div
 				v-for="(item, index) in counterDetails"
 				:key="index"

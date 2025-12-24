@@ -1,0 +1,56 @@
+<script setup>
+</script>
+
+<template>
+	<section>
+		<h1>slide 1</h1>
+	</section>
+	<section>
+		<h1>slide 2</h1>
+	</section>
+	<section>
+		<h1>slide 3</h1>
+	</section>
+	<section>
+		<h1>slide 4</h1>
+	</section>
+	<section>
+		<h1>slide 5</h1>
+	</section>
+</template>
+
+<style scoped>
+	html, body, section {
+  block-size: 100%;
+  height: 100dvh;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background: black;
+}
+
+section:nth-of-type(odd) {
+  color: black;
+  background: white;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 4rem;
+}
+</style>

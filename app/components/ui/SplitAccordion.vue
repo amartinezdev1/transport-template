@@ -76,7 +76,7 @@ onMounted(() => {
 		:ui="{
 			root: 'max-h-1/2 h-auto',
 			body: 'pb-6 data-[state=open]:border-none',
-			item: 'flex flex-col gap-16 data-[state=open]:text-white data-[state=closed]:text-[#646565] data-[state=open]:border-none',
+			item: 'flex flex-col gap-8 data-[state=open]:text-white data-[state=closed]:text-[#646565] data-[state=open]:border-none',
 			label: 'text-xl',
 			trigger: '',
 			trailingIcon: 'hidden',

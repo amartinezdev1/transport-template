@@ -21,7 +21,7 @@ const componentsResolved = computed(() => {
 <template>
 	<ClientOnly>
 		<section class="w-full py-24 sm:py-32 lg:py-40 ">
-			<section class="w-full flex flex-col gap-16">
+			<section class="w-full flex flex-col gap-8">
 				<component
 					:is="component.component"
 					v-for="(component, index) in componentsResolved"

@@ -33,11 +33,11 @@ const comparison = [
 
 <template>
 	<section class="w-full">
-		<div class="w-full grid grid-cols-1 lg:grid-cols-2 items-stretch gap-10 lg:gap-4">
+		<div class="w-full mt-12 grid grid-cols-1 lg:grid-cols-2 items-stretch gap-8">
 			<div
 				v-for="(item, index) in comparison"
 				:key="index"
-				class="w-full flex flex-col items-center gap-4 lg:gap-8"
+				class="w-full flex flex-col items-center gap-8"
 			>
 				<UBadge
 					:icon="item.icon"
@@ -50,7 +50,7 @@ const comparison = [
 					{{ item.title }}
 				</UBadge>
 				<div
-					class="size-full p-4 lg:p-6 rounded-xl bg-[#2d2e2e] flex flex-col gap-4"
+					class="size-full p-4 lg:p-6 rounded-xl bg-[#2d2e2e] flex flex-col gap-8"
 					:class="item.sectionClass"
 				>
 					<UBadge

@@ -13,8 +13,8 @@ const breakpoints = {
 </script>
 
 <template>
-	<section class="relative overflow-hidden">
-		<div class="container">
+	<section class="mt-8 relative overflow-hidden flex flex-col gap-16 items-center">
+		<div class="container w-full mx-auto">
 			<swiper
 				:modules="[Navigation]"
 				:slides-per-view="2"
@@ -35,7 +35,7 @@ const breakpoints = {
 						<div class="overflow-hidden aspect-video mb-6">
 							<img
 								:src="`https://picsum.photos/640/640?random=${n}`"
-								class="w-full h-full object-cover scale-105 transition-transform duration-300 group-hover:scale-100"
+								class="size-full object-cover scale-105 transition-transform duration-300 group-hover:scale-100"
 							>
 						</div>
 
@@ -49,6 +49,8 @@ const breakpoints = {
 					</article>
 				</swiper-slide>
 			</swiper>
+		</div>
+		<div class="flex gap-2">
 			<UButton
 				trailing-icon="i-lucide-arrow-left"
 				size="xl"

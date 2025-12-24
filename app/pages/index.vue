@@ -40,7 +40,7 @@ const sectionsShowCase = [
 			title: 'Real stories, real results',
 			descripcion: 'From responding to emergency situations to increasing online adoption levels, hear directly from the people and organisations we support about the positive impact our services have on their travel and meetings programmes.',
 		},
-		styleClass: 'px-6 lg:px-0',
+		styleClass: 'px-4 lg:px-0',
 	},
 	{
 		name: 'SwiperInfinite',
@@ -57,7 +57,7 @@ const sectionsShowCase = [
 			:ui="{ container: 'border-b border-b-zinc-300/50 flex flex-col lg:grid lg:grid-cols-3' }"
 		>
 			<template #default>
-				<div class="w-full lg:max-w-lg flex flex-col gap-4 self-start">
+				<div class="w-full lg:max-w-lg flex flex-col gap-8 self-start">
 					<h1 class="text-4xl lg:text-5xl font-medium leading:12 lg:leading-14">
 						Technology that puts people first
 					</h1>
@@ -77,9 +77,10 @@ const sectionsShowCase = [
 				>
 			</template>
 		</UPageHero>
+		<LoopedPanels />
 		<UPageHero>
 			<template #default>
-				<div class="w-full flex justify-between gap-12 relative">
+				<div class="w-full flex justify-between gap-8 relative">
 					<h2 class="max-w-xl text-4xl lg:text-5xl font-medium leading:12 lg:leading-14">
 						From eco-conscious travel and streamlined meetings to memorable events, we make it happen
 					</h2>
@@ -93,13 +94,16 @@ const sectionsShowCase = [
 		<div class="w-full bg-[#F6F6F6]">
 			<UPageHero>
 				<template #default>
-					<div class="w-full lg:max-w-(--ui-container) flex flex-col gap-8 lg:gap-16">
+					<div class="w-full lg:max-w-(--ui-container) flex flex-col gap-8">
 						<HeadingSection
 							title="Specialist industries we know inside out"
 							descripcion="We bring deep sector knowledge to support your travel and meetings, whatever your industry’s unique demands and challenges."
 							orientation="left"
 						/>
-						<LazySwiperVertical hydrate-on-visible />
+						<LazySwiperVertical
+							hydrate-on-visible
+							class="mt-12"
+						/>
 					</div>
 				</template>
 			</UPageHero>
