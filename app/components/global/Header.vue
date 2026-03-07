@@ -28,7 +28,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 </script>
 
 <template>
-	<UHeader title="Nuxt">
+	<UHeader title="Nuxt UI">
 		<UNavigationMenu :items="items" />
 
 		<template #right>
@@ -40,6 +40,13 @@ const items = computed<NavigationMenuItem[]>(() => [
 				target="_blank"
 				icon="i-simple-icons-github"
 				aria-label="GitHub"
+			/>
+		</template>
+		<template #body>
+			<UNavigationMenu
+				:items="items"
+				orientation="vertical"
+				class="-mx-2.5"
 			/>
 		</template>
 	</UHeader>

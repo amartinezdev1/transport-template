@@ -2,8 +2,5 @@
 </script>
 
 <template>
-	<div>
-		<Header />
-		<slot />
-	</div>
+	<h1>Footer Component</h1>
 </template>
